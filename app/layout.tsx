@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import WhatsappWidget from "./components/WhatsappWidget";
 
 export const metadata: Metadata = {
 	title: "Bethel Wells Mega System International Limited",
@@ -9,7 +12,13 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
 	return (
 		<html lang="en">
-			<body>{children}</body>
+			<body>
+				<Header />
+				{children}
+				<Footer />
+
+				<WhatsappWidget />
+			</body>
 		</html>
 	);
 }

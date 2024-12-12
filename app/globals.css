@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.6rem;
+    color: #444;
+    width: 100%;
+    line-height: 1;
+    background-color: #fff;
+}
+
+
+ul,
+ol {
+	list-style: none;
+}
+
+a,
+a:link,
+a:visited {
+	text-decoration: none;
+	transition: all .3s;
+}
+
+form,
+a,
+button,
+input,
+textarea,
+select {
+	font-family: inherit;
+	color: inherit;
+}
+
+a:hover {
+	color: unset;
+}
+
+button:has(svg) {
+	line-height: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+	hyphens: auto;
+	line-height: 1.2;
+}
+
+input[type="file"] {
+	display: none;
+}
+
+width-100 {
+	width: 100%;
+}
+
+img {
+	max-width: 100%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+textarea {
+	height: 8rem;
+	resize: none;
+    scrollbar-width: none;
+}
+textarea::placeholder {
+	line-height: 1.4;
+}
+
+button {
+	border: none;
+	cursor: pointer;
+}
+
+::-webkit-scrollbar {
+	width: 0.4rem;
+	height: 0.4rem;
+}
+::-webkit-scrollbar-track {
+	background: none;
+	border: none;
+}
+::-webkit-scrollbar-thumb {
+	background: #ccc;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: #aaa;
+}
+
+.spinner {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: radial-gradient(farthest-side,#474bff 94%,#0000) top/9px 9px no-repeat,
+           conic-gradient(#0000 30%,#474bff);
+    -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 9px),#000 0);
+    animation: spinner-c7wet2 1s infinite linear;
+}
+ 
+@keyframes spinner-c7wet2 {
+    100% {
+       transform: rotate(1turn);
+    }
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2.4rem;
+    height: 8rem;
+}
+
+.logo {
+    width: 6rem;
+    height: 6rem;
+}
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.nav--list {
+    display: flex;
+    align-items: center;
+    gap: 1.8rem;
+}
+.nav--list a:link,
+.nav--list a:visited {
+    font-size: 1.68rem;
+}
+
+.nav--list a:hover {
+    color: #eb843b;
+}
