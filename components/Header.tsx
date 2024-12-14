@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
-import img from "@/app/assets/logo.png"
+import img from "@/assets/logo.png"
 
 function Header() {
   return (

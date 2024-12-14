@@ -156,3 +156,19 @@ button {
 .nav--list a:hover {
     color: #eb843b;
 }
+
+body .main {
+    max-width: 118rem;
+    margin: 0 auto;
+    padding: 0 2.4rem;
+}
+body .section {
+    padding: 8rem 0;
+}
+
+/* HERO SECTION */
+.hero--container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
